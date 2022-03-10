@@ -1,0 +1,78 @@
+1. Run playwright test 
+    What: 
+        To run playwright test automation
+    When: 
+        Run playwright test 
+    How: 
+        npx playwright <nameOfFile> --headed
+    Note: 
+
+    
+2. CSS selector
+    What: 
+        CSS selectors are used to find (or select) the HTML elements 
+    When: 
+        We want to get element to run automation by step
+    How: 
+        await page.locator('button').click();
+    Note: 
+
+3. Inspector
+    What: 
+        Generate step and recording
+        Pause steps    
+    When: 
+        User want to generate code by ui step 
+    How: 
+        npx playwright codegen <link web>
+        await page.pause();
+
+4. Trace viewer
+    What: 
+        Take screen shoot 
+        Record video of UI when automation run 
+    When: 
+        We want to take screenshot or recording video when automation run
+    How: 
+        - Add tracing in file.config.ts
+        - Automatic Screenshot 
+            // import { PlaywrightTestConfig } from '@playwright/test';
+            // const config: PlaywrightTestConfig = {
+            //     use: {
+            //     screenshot: 'on',
+            //         },
+            //         };
+            // export default config;
+
+        - Record video 
+            // import { PlaywrightTestConfig } from '@playwright/test';
+            // const config: PlaywrightTestConfig = {
+            // use: {
+            //     video: 'on',
+            // },
+            // };
+            // export default config;
+
+5. API
+    What: 
+    An API is a set of programming code that enables data 
+    transmission between one software product and another
+    When: 
+    How: 
+        Method
+            Get - Requests to retrieve resource representation/information only
+            Post - create new subordinate resources
+            Put - to update an existing resource
+            Delete - delete the resources
+
+        Status response: 
+            200 - ok 
+            400 - Client error
+            500 - Sever error 
+            Detail: https://www.webfx.com/web-development/glossary/http-status-codes/
+        
+            
+            
+
+
+            
